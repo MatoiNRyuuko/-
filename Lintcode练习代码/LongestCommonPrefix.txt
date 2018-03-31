@@ -1,0 +1,21 @@
+给k个字符串，求出他们的最长公共前缀(LCP)
+
+样例
+在 "ABCD" "ABEF" 和 "ACEF" 中,  LCP 为 "A"
+
+在 "ABCDEFG", "ABCEFG", "ABCEFA" 中, LCP 为 "ABC"
+
+思路：记住字符串的分割方法。
+String s = "ABCABCABCA"
+
+String s1 =s.substring(0,1);
+
+s1的结果是"A"。
+
+java里面有个大坑如果同样的字符串用==号判断返回的是false（坑了我一个小时）
+要用 s1.euals(s2)判断才会返回true。
+
+然后就是进行字符串的分割对比，每次对比字符串的前n个，如果都相等就n++。
+直到不相等或者n大于某个字符串长度就返回。
+
+为什么一道思路这么简单的题想这么久？
