@@ -20,6 +20,7 @@ public class FindPosition {
             if(nums[low] > target || nums[high] < target){
                 return -1;
             }
+        }
         return -1;
     }
 }
