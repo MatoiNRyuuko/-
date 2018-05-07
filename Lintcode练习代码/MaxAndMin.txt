@@ -1,0 +1,17 @@
+770. Maximum and Minimum
+
+Given a matrix, return the maximum number and the minimum number.
+
+样例
+
+Given a matrix:
+
+[
+ [1,2,3],
+ [4,3,2],
+ [6,4,4]
+]
+return [6,1]
+
+思路：简单的遍历二维数组区取最大最小，唯一需要注意的是判断边界条件数组为空时返回的是 return new int [0];
+返回null不行。
